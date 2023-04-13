@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let sectionTitles: [String] = ["Trending Movies", "Popular", "Trending TV", "Upcoming Movies", "Top Rated"]
+    let sectionTitles: [String] = ["Trending Movies", "Trending TV", "Popular", "Upcoming Movies", "Top Rated"]
     
     private let homeTableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
@@ -28,6 +28,8 @@ class HomeViewController: UIViewController {
         
         let headerView = HeroHeaderVIew(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeTableView.tableHeaderView = headerView
+        
+        getTrendingMovies()
     }
     
     private func configureNavbar() {
@@ -46,6 +48,17 @@ class HomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeTableView.frame = view.bounds
+    }
+    
+    private func getTrendingMovies() {
+        APICaller.shared.getTrendingMovies { results in
+            switch results {
+            case.success(let movie):
+                print(movie)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 
