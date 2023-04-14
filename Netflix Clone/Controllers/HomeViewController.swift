@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
         let headerView = HeroHeaderVIew(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeTableView.tableHeaderView = headerView
         
-        getTrendingMovies()
+        fetchData()
     }
     
     private func configureNavbar() {
@@ -50,8 +50,40 @@ class HomeViewController: UIViewController {
         homeTableView.frame = view.bounds
     }
     
-    private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { results in
+    private func fetchData() {
+//        APICaller.shared.getTrendingMovies { results in
+//            switch results {
+//            case.success(let movie):
+//                print(movie)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//        APICaller.shared.getTrendingTvs { results in
+//            switch results {
+//            case.success(let tv):
+//                print(tv)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//        APICaller.shared.getUpcomingMovies { results in
+//            switch results {
+//            case.success(let movie):
+//                print(movie)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//        APICaller.shared.getPopular { results in
+//            switch results {
+//            case.success(let movie):
+//                print(movie)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+        APICaller.shared.getTopRated { results in
             switch results {
             case.success(let movie):
                 print(movie)
@@ -92,7 +124,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                                          width: 10,
                                          height: header.bounds.height)
         header.textLabel?.textColor = .white
-        header.textLabel?.text = header.textLabel?.text?.lowercased()
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
