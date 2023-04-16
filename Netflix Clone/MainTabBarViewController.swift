@@ -12,8 +12,6 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .blue
-        
         let homeVC = UINavigationController(rootViewController: HomeViewController())
         let upcomingVC = UINavigationController(rootViewController: UpcomingViewController())
         let searchVC = UINavigationController(rootViewController: SearchViewController())
