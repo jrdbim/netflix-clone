@@ -71,8 +71,23 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-            let leftInset: CGFloat = 8.0
-            return UIEdgeInsets(top: 0, left: section == 0 ? leftInset : 0, bottom: 0, right: 0)
+        let leftInset: CGFloat = 8.0
+        return UIEdgeInsets(top: 0, left: section == 0 ? leftInset : 0, bottom: 0, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let title = titles[indexPath.row]
+        guard let titleName = title.original_title ?? title.original_name else { return }
+        
+        APICaller.shared.getMovie(with: titleName + " trailer") { result in
+            switch result {
+            case .success(let videoElement):
+                print(videoElement.id)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
         }
+    }
     
 }
