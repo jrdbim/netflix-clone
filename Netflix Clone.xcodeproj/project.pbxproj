@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		304E27B429E4D9B2004521C7 /* HeroHeaderVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E27B329E4D9B2004521C7 /* HeroHeaderVIew.swift */; };
+		304E27B429E4D9B2004521C7 /* HeroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E27B329E4D9B2004521C7 /* HeroHeaderView.swift */; };
 		307D25F929E8C1240042B103 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D25F829E8C1240042B103 /* APICaller.swift */; };
 		307D25FB29E8C4140042B103 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D25FA29E8C4140042B103 /* Title.swift */; };
 		307D25FD29E8C76D0042B103 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307D25FC29E8C76D0042B103 /* Extensions.swift */; };
@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		304E27B329E4D9B2004521C7 /* HeroHeaderVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderVIew.swift; sourceTree = "<group>"; };
+		304E27B329E4D9B2004521C7 /* HeroHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderView.swift; sourceTree = "<group>"; };
 		307D25F829E8C1240042B103 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		307D25FA29E8C4140042B103 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		307D25FC29E8C76D0042B103 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				3097105929E12B9800F59A62 /* CollectionViewTableViewCell.swift */,
-				304E27B329E4D9B2004521C7 /* HeroHeaderVIew.swift */,
+				304E27B329E4D9B2004521C7 /* HeroHeaderView.swift */,
 				308DF4DE29EB88950067F022 /* TitleCollectionViewCell.swift */,
 				308DF4E529EB92C80067F022 /* TitleTableViewCell.swift */,
 			);
@@ -264,7 +264,7 @@
 				3097105A29E12B9800F59A62 /* CollectionViewTableViewCell.swift in Sources */,
 				307D25F929E8C1240042B103 /* APICaller.swift in Sources */,
 				3097105329E11C5600F59A62 /* DownloadsViewController.swift in Sources */,
-				304E27B429E4D9B2004521C7 /* HeroHeaderVIew.swift in Sources */,
+				304E27B429E4D9B2004521C7 /* HeroHeaderView.swift in Sources */,
 				3097103829E1151100F59A62 /* AppDelegate.swift in Sources */,
 				30AA3FF529F6070800AD3EDC /* SearchResultsViewController.swift in Sources */,
 				307D25FD29E8C76D0042B103 /* Extensions.swift in Sources */,
