@@ -61,6 +61,8 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.selectionStyle = .none
+        
         let title = titles[indexPath.row]
         cell.configure(with: TitleViewModel(titleName: title.original_name ?? title.original_title ?? "Unknown title name", posterURL: title.poster_path ?? ""))
         return cell
