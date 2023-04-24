@@ -28,6 +28,8 @@
 		3097105A29E12B9800F59A62 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3097105929E12B9800F59A62 /* CollectionViewTableViewCell.swift */; };
 		30AA3FF529F6070800AD3EDC /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA3FF429F6070800AD3EDC /* SearchResultsViewController.swift */; };
 		30AA3FF929F6119E00AD3EDC /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA3FF829F6119E00AD3EDC /* YoutubeSearchResponse.swift */; };
+		30AA3FFB29F6147600AD3EDC /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA3FFA29F6147600AD3EDC /* TitlePreviewViewController.swift */; };
+		30AA3FFD29F616C400AD3EDC /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AA3FFC29F616C400AD3EDC /* TitlePreviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		3097105929E12B9800F59A62 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		30AA3FF429F6070800AD3EDC /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		30AA3FF829F6119E00AD3EDC /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		30AA3FFA29F6147600AD3EDC /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		30AA3FFC29F616C400AD3EDC /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				308DF4E729EB94EA0067F022 /* TitleViewModel.swift */,
+				30AA3FFC29F616C400AD3EDC /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				30AA3FF429F6070800AD3EDC /* SearchResultsViewController.swift */,
+				30AA3FFA29F6147600AD3EDC /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 				307D25FD29E8C76D0042B103 /* Extensions.swift in Sources */,
 				30AA3FF929F6119E00AD3EDC /* YoutubeSearchResponse.swift in Sources */,
 				3097103A29E1151100F59A62 /* SceneDelegate.swift in Sources */,
+				30AA3FFD29F616C400AD3EDC /* TitlePreviewViewModel.swift in Sources */,
 				3097104F29E11C3E00F59A62 /* UpcomingViewController.swift in Sources */,
+				30AA3FFB29F6147600AD3EDC /* TitlePreviewViewController.swift in Sources */,
 				307D25FB29E8C4140042B103 /* Title.swift in Sources */,
 				3097104D29E11C2B00F59A62 /* HomeViewController.swift in Sources */,
 				308DF4E829EB94EA0067F022 /* TitleViewModel.swift in Sources */,
